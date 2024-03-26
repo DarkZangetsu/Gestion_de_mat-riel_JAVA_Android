@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gestion Materiel</string>
+    <string name="total_quantite">Total Quantité:</string>
+</resources>

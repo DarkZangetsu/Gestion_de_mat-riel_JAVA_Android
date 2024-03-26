@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/NMAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="N°Mat:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NMAT"
+        android:text="Design:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Etat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Design"
+        android:text="Etat:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Quantite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Etat"
+        android:text="Quantité:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/Suppression"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Etat"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/Modification"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Etat"
+        android:layout_alignParentRight="false"
+        android:layout_toLeftOf="@id/Suppression"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="TouchTargetSizeCheck" />
+</RelativeLayout>
